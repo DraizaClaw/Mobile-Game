@@ -21,8 +21,8 @@ public class Cps : MonoBehaviour
         if (GetComponent<ScoreIncrement>().ScoreFloat - x >= 0)
         {
             GetComponent<ScoreIncrement>().ScoreFloat -= x;
-            x *= 2.5f;
-            GetComponent<ScoreIncrement>().CpsValue += 0.75f; //score increases by cps every sec
+            x *= 2.25f;
+            GetComponent<ScoreIncrement>().CpsValue += 1.25f; //score increases by cps every sec
         }
         CPS_Price = x;
     }

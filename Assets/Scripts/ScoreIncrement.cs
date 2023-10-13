@@ -40,7 +40,7 @@ public class ScoreIncrement : MonoBehaviour
         PlayerPrefs.SetFloat("RebirthPrice", GetComponent<Upgrade>().RebirthPrice);
         PlayerPrefs.SetFloat("CpsValue" , CpsValue);
 
-        ScoreFloat += CpsValue * Time.fixedDeltaTime; 
+        ScoreFloat += CpsValue * Time.deltaTime; 
     }
 
     public void ScoreIncrease (float x)

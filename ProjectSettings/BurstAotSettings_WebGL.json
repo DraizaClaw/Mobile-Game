@@ -4,7 +4,7 @@
     "EnableBurstCompilation": true,
     "EnableOptimisations": true,
     "EnableSafetyChecks": false,
-    "EnableDebugInAllBuilds": true,
+    "EnableDebugInAllBuilds": false,
     "CpuMinTargetX32": 0,
     "CpuMaxTargetX32": 0,
     "CpuMinTargetX64": 0,

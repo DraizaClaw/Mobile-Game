@@ -200,7 +200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.290894, y: 977.29834}
+  m_AnchoredPosition: {x: 0, y: 504}
   m_SizeDelta: {x: 896.1337, y: 341.1971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &291833432
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 568876750}
   - component: {fileID: 568876749}
   m_Layer: 5
-  m_Name: Cps Button
+  m_Name: CPS -B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,13 +387,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1591663480}
+  - {fileID: 573911202}
   m_Father: {fileID: 1086614064}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 353, y: -21.798}
-  m_SizeDelta: {x: 567.2622, y: 717.5961}
+  m_AnchoredPosition: {x: 360.01, y: -21.797}
+  m_SizeDelta: {x: 719.98, y: 391.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568876749
 MonoBehaviour:
@@ -474,7 +475,7 @@ GameObject:
   - component: {fileID: 573911204}
   - component: {fileID: 573911203}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: CPS 2 -T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -487,18 +488,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573911201}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1086614064}
-  m_RootOrder: 5
+  m_Father: {fileID: 568876748}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 357.68628, y: -537.859}
-  m_SizeDelta: {x: 442.1127, y: 233.7181}
+  m_AnchoredPosition: {x: 0, y: -282}
+  m_SizeDelta: {x: 720, y: 233.7181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &573911203
 MonoBehaviour:
@@ -522,12 +523,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 200
+    m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -555,7 +556,7 @@ GameObject:
   - component: {fileID: 670771315}
   - component: {fileID: 670771314}
   m_Layer: 5
-  m_Name: Upgrade Button
+  m_Name: CV Upgrade -B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,12 +575,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1113459616}
+  - {fileID: 1274283219}
   m_Father: {fileID: 1086614064}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360, y: -528}
+  m_AnchoredPosition: {x: -360, y: -21.798}
   m_SizeDelta: {x: 720, y: 391.2925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670771314
@@ -685,8 +687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -366, y: 87}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: 0.000020981, y: -915}
+  m_SizeDelta: {x: 1246.6, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &973801702
 MonoBehaviour:
@@ -852,8 +854,6 @@ RectTransform:
   - {fileID: 670771313}
   - {fileID: 1780498448}
   - {fileID: 568876748}
-  - {fileID: 573911202}
-  - {fileID: 1274283219}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 1113459615}
   - component: {fileID: 1113459614}
   m_Layer: 5
-  m_Name: Re-Birth Button Text
+  m_Name: CV Upgrade -T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -902,7 +902,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 172
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -913,7 +913,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 123456789
+  m_Text: 12345678901234564
 --- !u!222 &1113459615
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 1274283221}
   - component: {fileID: 1274283220}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: 'CV Upgrade 2 -T '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,17 +967,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274283218}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1086614064}
-  m_RootOrder: 6
+  m_Father: {fileID: 670771313}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360, y: -810}
+  m_AnchoredPosition: {x: 0, y: -282}
   m_SizeDelta: {x: 720, y: 233.7181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274283220
@@ -1002,18 +1002,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 144
+    m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click Value
+  m_Text: '     Click Value'
 --- !u!222 &1274283221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 1591663482}
   - component: {fileID: 1591663481}
   m_Layer: 5
-  m_Name: Cps Button Text
+  m_Name: CPS -T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1082,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 172
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1093,7 +1093,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 123456789
+  m_Text: 1234567890123456
 --- !u!222 &1591663482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1115,7 +1115,7 @@ GameObject:
   - component: {fileID: 1780498450}
   - component: {fileID: 1780498449}
   m_Layer: 5
-  m_Name: Restart
+  m_Name: Restart - B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1139,7 +1139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1080}
+  m_AnchoredPosition: {x: 0, y: 999.24}
   m_SizeDelta: {x: 653.2251, y: 391.2925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780498449
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 2138623422}
   - component: {fileID: 2138623421}
   m_Layer: 5
-  m_Name: Re-Birth Button Text
+  m_Name: Restart - T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
