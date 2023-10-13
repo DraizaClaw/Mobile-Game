@@ -10,6 +10,14 @@ public class Upgrade : MonoBehaviour
     public Text Rebirth_Cost;
     public float RebirthPrice = 10;
 
+
+    private void Update()
+    {
+        Rebirth_Cost.text = RebirthPrice.ToString();
+    }
+
+
+
     public void RebirthFunc(float x)
     {
         x = RebirthPrice;
@@ -17,9 +25,8 @@ public class Upgrade : MonoBehaviour
         {
             GetComponent<ScoreIncrement>().ScoreFloat -= x;
             x *= 2;
-            GetComponent<ScoreIncrement>().ClickValue += 2;
+            GetComponent<ScoreIncrement>().ClickValue += 1;
         }
-        Rebirth_Cost.text = RebirthPrice.ToString();
         RebirthPrice = x;
     }
 
