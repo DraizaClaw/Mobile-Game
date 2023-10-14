@@ -12,7 +12,7 @@ public class Cps : MonoBehaviour
 
     private void Update()
     {
-        CPS_Cost.text = Mathf.Round(CPS_Price).ToString();
+      //  CPS_Cost.text = Mathf.Round(CPS_Price).ToString();
     }
 
     public void CpsUpgrade(float x)

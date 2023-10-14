@@ -7,27 +7,27 @@ using UnityEngine.EventSystems;
 public class Upgrade : MonoBehaviour
 {
 
-    public Text Rebirth_Cost;
-    public float RebirthPrice = 10;
+    public Text CV_Price_Text;
+    public float CV_Price = 10;
 
 
     private void Update()
     {
-        Rebirth_Cost.text = RebirthPrice.ToString();
+        //CV_Price_Text.text = CV_Price.ToString();
     }
 
 
 
-    public void RebirthFunc(float x)
+    public void CVIncrement(float x)
     {
-        x = RebirthPrice;
+        x = CV_Price;
         if (GetComponent<ScoreIncrement>().ScoreFloat - x >= 0 )
         {
             GetComponent<ScoreIncrement>().ScoreFloat -= x;
             x *= 2;
             GetComponent<ScoreIncrement>().ClickValue += 1;
         }
-        RebirthPrice = x;
+        CV_Price = x;
     }
 
 

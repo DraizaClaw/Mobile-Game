@@ -12,6 +12,9 @@ public class ScoreIncrement : MonoBehaviour
     public float ClickValue = 1;
     public float CpsValue = 0;
 
+
+
+
     private void Awake()
     {
         ScoreFloat = PlayerPrefs.GetFloat("Score");
@@ -24,23 +27,22 @@ public class ScoreIncrement : MonoBehaviour
 
 
 
-        GetComponent<Upgrade>().RebirthPrice = PlayerPrefs.GetFloat("RebirthPrice");
-        if (PlayerPrefs.GetFloat("RebirthPrice") >= 0)
-        {
-            PlayerPrefs.SetFloat("RebirthPrice", 10);
-        }
+        GetComponent<Upgrade>().CV_Price = PlayerPrefs.GetFloat("CV_Price");
     }
 
     private void Update()
     {
 
-        ScoreText.text =  Mathf.Round(ScoreFloat).ToString();
+        //ScoreText.text =  Mathf.Round(ScoreFloat).ToString();
         PlayerPrefs.SetFloat("Score", ScoreFloat);
         PlayerPrefs.SetFloat("ClickValue", ClickValue);
-        PlayerPrefs.SetFloat("RebirthPrice", GetComponent<Upgrade>().RebirthPrice);
+        PlayerPrefs.SetFloat("CV_Price", GetComponent<Upgrade>().CV_Price);
         PlayerPrefs.SetFloat("CpsValue" , CpsValue);
 
-        ScoreFloat += CpsValue * Time.deltaTime; 
+        
+        //  ScoreFloat += Mathf.Round(CpsValue * Time.fixedDeltaTime);
+
+        //StartCoroutine(PerSec());
     }
 
     public void ScoreIncrease (float x)
@@ -55,9 +57,17 @@ public class ScoreIncrement : MonoBehaviour
         ClickValue = 1;
         CpsValue = 0;
         ScoreFloat = 0;
-        GetComponent<Upgrade>().RebirthPrice = 10;
+        GetComponent<Upgrade>().CV_Price = 10;
         GetComponent<Cps>().CPS_Price = 10;
 
+    }
+
+
+    IEnumerator PerSec()
+    {
+
+        yield return new WaitForSeconds(1);
+        ScoreFloat += CpsValue;
     }
 
 

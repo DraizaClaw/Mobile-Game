@@ -163,10 +163,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 299
+    m_FontSize: 250
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0000
+  m_Text: 0000 K
 --- !u!222 &262370699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1271,8 +1271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d8805b23039de408da59416412ef4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rebirth_Cost: {fileID: 1113459614}
-  RebirthPrice: 10
+  CV_Price_Text: {fileID: 0}
+  CV_Price: 10
 --- !u!114 &2048292604
 MonoBehaviour:
   m_ObjectHideFlags: 0
