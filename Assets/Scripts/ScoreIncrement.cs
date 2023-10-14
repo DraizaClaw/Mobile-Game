@@ -14,6 +14,11 @@ public class ScoreIncrement : MonoBehaviour
 
 
 
+    private void Start()
+    {
+        InvokeRepeating("CPerSec", 0, 1);
+    }
+
 
     private void Awake()
     {
@@ -55,6 +60,10 @@ public class ScoreIncrement : MonoBehaviour
     }
 
 
+    private void CPerSec()
+    {
+        ScoreFloat += Mathf.Round(CpsValue);
+    }
 
 
 
