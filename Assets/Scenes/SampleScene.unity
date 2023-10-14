@@ -603,7 +603,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2048292603}
           m_TargetAssemblyTypeName: Upgrade, Assembly-CSharp
-          m_MethodName: RebirthFunc
+          m_MethodName: CVIncrement
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1221,6 +1221,7 @@ GameObject:
   - component: {fileID: 2048292601}
   - component: {fileID: 2048292603}
   - component: {fileID: 2048292604}
+  - component: {fileID: 2048292605}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1271,7 +1272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d8805b23039de408da59416412ef4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CV_Price_Text: {fileID: 0}
+  CV_Price_Text: {fileID: 1113459614}
   CV_Price: 10
 --- !u!114 &2048292604
 MonoBehaviour:
@@ -1287,6 +1288,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CPS_Cost: {fileID: 1591663481}
   CPS_Price: 10
+--- !u!114 &2048292605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048292600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b9868e0ac093047b1a9dcdf94b0d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cv_price: {fileID: 1113459614}
+  cps_price: {fileID: 1591663481}
+  score: {fileID: 262370698}
 --- !u!1 &2138623419
 GameObject:
   m_ObjectHideFlags: 0

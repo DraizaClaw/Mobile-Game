@@ -28,12 +28,14 @@ public class ScoreIncrement : MonoBehaviour
 
 
         GetComponent<Upgrade>().CV_Price = PlayerPrefs.GetFloat("CV_Price");
+
+
+        
     }
 
     private void Update()
     {
 
-        //ScoreText.text =  Mathf.Round(ScoreFloat).ToString();
         PlayerPrefs.SetFloat("Score", ScoreFloat);
         PlayerPrefs.SetFloat("ClickValue", ClickValue);
         PlayerPrefs.SetFloat("CV_Price", GetComponent<Upgrade>().CV_Price);
@@ -42,8 +44,22 @@ public class ScoreIncrement : MonoBehaviour
         
         //  ScoreFloat += Mathf.Round(CpsValue * Time.fixedDeltaTime);
 
-        //StartCoroutine(PerSec());
+        
     }
+
+    IEnumerator PerSec()
+    {
+
+        yield return new WaitForSeconds(1);
+        ScoreFloat += CpsValue;
+    }
+
+
+
+
+
+
+
 
     public void ScoreIncrease (float x)
     {
@@ -61,14 +77,5 @@ public class ScoreIncrement : MonoBehaviour
         GetComponent<Cps>().CPS_Price = 10;
 
     }
-
-
-    IEnumerator PerSec()
-    {
-
-        yield return new WaitForSeconds(1);
-        ScoreFloat += CpsValue;
-    }
-
 
 }
