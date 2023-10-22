@@ -52,12 +52,6 @@ public class ScoreIncrement : MonoBehaviour
         
     }
 
-    IEnumerator PerSec()
-    {
-
-        yield return new WaitForSeconds(1);
-        ScoreFloat += CpsValue;
-    }
 
 
     private void CPerSec()
