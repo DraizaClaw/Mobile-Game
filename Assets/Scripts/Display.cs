@@ -52,7 +52,7 @@ public class Display : MonoBehaviour
 
     public string shorten(float num)
     {
-        string[] placeholders = new string[]{ "", " K", " M", " B", " T" };
+        string[] placeholders = new string[]{ "", " K", " M", " B", " T"  };
 
 
 

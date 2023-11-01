@@ -11,11 +11,11 @@ public class ClickHere : MonoBehaviour
 
     public void Emphasis()
     {
-        clickerRegion.rectTransform.localScale = new Vector3(3, 3, 3);
+        clickerRegion.rectTransform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
-        print("waittforme");
-        Invoke("ReturntoNormal", 1);
-        print("waittforme2");
+        //print("waittforme");
+        Invoke("ReturntoNormal", 0.25f);
+        //print("waittforme2");
 
 
     }

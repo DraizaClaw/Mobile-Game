@@ -7,28 +7,27 @@ using UnityEngine.EventSystems;
 public class ScoreIncrement : MonoBehaviour
 {
 
-    public Text ScoreText;
     public float ScoreFloat;
     public float ClickValue = 1;
     public float CpsValue = 0;
 
 
 
+
+
     private void Start()
     {
+
+
         InvokeRepeating("CPerSec", 0, 1);
-    }
 
 
-    private void Awake()
-    {
         ScoreFloat = PlayerPrefs.GetFloat("Score");
-        ClickValue = PlayerPrefs.GetFloat("ClickValue");
         ClickValue = PlayerPrefs.GetFloat("ClickValue");
         CpsValue = PlayerPrefs.GetFloat("CpsValue");
 
 
-        GetComponent<Cps>().CPS_Price = PlayerPrefs.GetFloat("CpsValue");
+        GetComponent<Cps>().CPS_Price = PlayerPrefs.GetFloat("Cps_Price");
 
 
 
@@ -42,9 +41,13 @@ public class ScoreIncrement : MonoBehaviour
     {
 
         PlayerPrefs.SetFloat("Score", ScoreFloat);
+        
         PlayerPrefs.SetFloat("ClickValue", ClickValue);
+        PlayerPrefs.SetFloat("CpsValue", CpsValue);
+
+
         PlayerPrefs.SetFloat("CV_Price", GetComponent<Upgrade>().CV_Price);
-        PlayerPrefs.SetFloat("CpsValue" , CpsValue);
+        PlayerPrefs.SetFloat("Cps_Price" , GetComponent<Cps>().CPS_Price);
 
         
         //  ScoreFloat += Mathf.Round(CpsValue * Time.fixedDeltaTime);

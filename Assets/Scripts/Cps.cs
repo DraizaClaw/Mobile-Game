@@ -18,6 +18,8 @@ public class Cps : MonoBehaviour
     public void CpsUpgrade(float x)
     {
         x = CPS_Price;
+
+        //if u can upgrade when button if pressed do so
         if (GetComponent<ScoreIncrement>().ScoreFloat - x >= 0)
         {
             GetComponent<ScoreIncrement>().ScoreFloat -= x;
